@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradas - Chivas San Andrés</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/paradas.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="../img/logo.png" alt="Chivas San Andrés Logo">
+            <div class="logo-text">Let's Go (Experiencias en chivas)</div>
+        </a>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <div class="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <!-- Navbar se llenará dinámicamente desde JavaScript -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3><i class="fas fa-map-marked-alt"></i> Paradas del Recorrido</h3>
+            <ul class="paradas-list">
+                <!-- Las paradas se cargarán dinámicamente desde Firebase -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab active" data-tab="gallery">
+                    <i class="fas fa-images"></i> Galería
+                </div>
+                <div class="tab" data-tab="map">
+                    <i class="fas fa-map-marker-alt"></i> Ubicación
+                </div>
+                <div class="tab" data-tab="info">
+                    <i class="fas fa-info-circle"></i> Información
+                </div>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tab-content active" id="gallery">
+                <div class="gallery-container">
+                    <div class="main-image">
+                        <img id="mainImage" src="../img/placeholder.jpg" alt="Imagen principal">
+                        <button class="image-controls prev-btn" onclick="previousImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="image-controls next-btn" onclick="nextImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="image-info">
+                            <h4 id="imageTitle">Cargando paradas...</h4>
+                            <p id="imageDescription">Por favor espere mientras cargamos la información.</p>
+                        </div>
+                    </div>
+                    <div class="thumbnails" id="thumbnails">
+                        <!-- Thumbnails se generan dinámicamente -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="map">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Mapa de Google Maps se cargará aquí</p>
+                        <small>Ubicación de la parada seleccionada</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="info">
+                <div class="info-content">
+                    <div class="info-section">
+                        <h4 id="infoTitle">Cargando información...</h4>
+                        <p id="infoDescription">Por favor espere mientras cargamos los detalles de la parada.</p>
+                    </div>
+                    <div class="info-highlights" id="infoHighlights">
+                        <!-- Highlights se generan dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- Configuración Firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAPZLIz_h9wRpjr_3NLYf0TXX0ltGwE7-A",
+            authDomain: "publicaciones-suarez-osorio.firebaseapp.com",
+            databaseURL: "https://publicaciones-suarez-osorio-default-rtdb.firebaseio.com",
+            projectId: "publicaciones-suarez-osorio",
+            storageBucket: "publicaciones-suarez-osorio.appspot.com",
+            messagingSenderId: "159398437691",
+            appId: "1:159398437691:web:067e392393520aa2478d1e",
+            measurementId: "G-MDY0D2YM0P"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+    </script>
+
+    <!-- Script de la aplicación -->
+    <script src="../assets/js/paradas.js"></script>
+</body>
+
+</html>

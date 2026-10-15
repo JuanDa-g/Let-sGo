@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chivas San Andrés - Opciones de Transporte</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #F2C422; 
+            --secondary-color: #228533;
+            --dark-color: #223140;
+            --light-color: #f4f9ff;
+            --grey-color: #e9ecef;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: var(--dark-color);
+            font-weight: 500;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--secondary-color);
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover:after,
+        nav ul li a.active:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn, .close-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-color);
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .servicio-detalle {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .titulo-servicio {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Navegación superior */
+        .navegacion-servicio {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background-color: var(--grey-color);
+            color: var(--dark-color);
+            padding: 12px 24px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .nav-btn.active {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        /* Contenido principal */
+        .contenido-principal {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .descripcion {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .descripcion h2 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .descripcion-servicio {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .boton-reservar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .boton-reservar:hover {
+            background-color: #1e6b2a;
+            transform: translateY(-2px);
+        }
+
+        /* Sección de bonos */
+        .seccion-bonos {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .icono-bonos {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .seccion-bonos h3 {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .seccion-bonos p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .boton-bonos {
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .boton-bonos:hover {
+            background-color: #d4a91b;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .contenido-principal {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .navegacion-servicio {
+                gap: 10px;
+            }
+
+            .nav-btn {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 15px;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: var(--white);
+                box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+                z-index: 2000;
+                overflow-y: auto;
+            }
+
+            nav.active {
+                right: 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 70px 30px;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .close-menu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .titulo-servicio {
+                font-size: 2rem;
+            }
+
+            .servicio-detalle {
+                padding: 20px;
+            }
+
+            .navegacion-servicio {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-btn {
+                width: 200px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .descripcion h2 {
+                font-size: 1.5rem;
+            }
+
+            .navegacion-servicio {
+                gap: 8px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+
+        /* Botón de reserva en nav */
+        .reservar {
+            background-color: var(--secondary-color);
+            color: var(--white) !important;
+            padding: 8px 15px !important;
+            border-radius: 4px;
+        }
+
+        .reservar:hover {
+            background-color: #e05b00;
+        }
+
+        .reservar:after {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Chivas San Andrés Logo">
+            <div class="logo-text">Let's Go (Experiencias en chivas)</div>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <div class="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#" class="active">Nombre del Servicio</a></li>
+                <li><a href="#booking" class="reservar">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicio-detalle">
+            <h1 class="titulo-servicio">Nombre del Servicio</h1>
+            
+            <!-- Navegación superior -->
+            <div class="navegacion-servicio">
+                <a href="paradas.html" class="nav-btn">
+                    <i class="fas fa-images"></i> Galería
+                </a>
+                <a href="#" class="nav-btn active">Descripción</a>
+                <a href="#bonos" class="nav-btn">
+                    <i class="fas fa-dollar-sign"></i> Bonos
+                </a>
+                <a href="#reservas" class="nav-btn">
+                    <i class="fas fa-calendar-alt"></i> Reservar
+                </a>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="contenido-principal">
+                <div class="descripcion">
+                    <h2>Descripción</h2>
+                    <p class="descripcion-servicio">
+                        Descripción cjerbcejdfc je cje cjre wfjf ewcje wdc jc
+                    </p>
+                    <button class="boton-reservar" onclick="window.location.href='sistema-reservas.html'">
+                        <i class="fas fa-calendar-check"></i> Reservar Ahora
+                    </button>
+                </div>
+
+                <div class="seccion-bonos" id="bonos">
+                    <div class="icono-bonos">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Bonos Disponibles</h3>
+                    <p>Aprovecha nuestros bonos especiales y descuentos exclusivos para este servicio.</p>
+                    <button class="boton-bonos" onclick="aplicarBono()">
+                        Aplicar al bono
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/servicios.js"></script>
+</body>
+</html>

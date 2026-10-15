@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go (Experiencias en chivas)</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Animación de carga -->
+    <!-- <div class="loading-animation">
+        <div class="chiva-animation"></div>
+    </div> -->
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Chivas San Andrés Logo">
+            <div class="logo-text">Let's Go</div>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <div class="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="#about">Acerca de nosotros</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#transport">Opciones de Transportes</a></li>
+                <li><a href="#booking">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('img/8.jpeg')">
+                <div class="slide-content">
+                    <h1 class="slide-title">Descubre San Andrés en auténticas chivas</h1>
+                    <p class="slide-desc">Vive la experiencia de recorrer la isla en nuestras coloridas chivas tradicionales mientras disfrutas de la mejor música local y las mejores vistas.</p>
+                    <a href="#booking" class="hero-btn">Reserva tu ruta</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/8.jpeg')">
+                <div class="slide-content">
+                    <h1 class="slide-title">Experiencias inolvidables en la isla</h1>
+                    <p class="slide-desc">Conoce los rincones más hermosos de San Andrés con guías locales y la comodidad de nuestras chivas equipadas para tu aventura.</p>
+                    <a href="#routes" class="hero-btn">Ver rutas</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/8.jpeg')">
+                <div class="slide-content">
+                    <h1 class="slide-title">Tradición y cultura sobre ruedas</h1>
+                    <p class="slide-desc">Nuestras chivas combinan el transporte tradicional colombiano con la calidez y alegría de la cultura isleña de San Andrés.</p>
+                    <a href="#transport" class="hero-btn">Nuestras chivas</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <div class="slider-nav-item active"></div>
+            <div class="slider-nav-item"></div>
+            <div class="slider-nav-item"></div>
+        </div>
+    </section>
+
+    <!-- Acerca de nosotros -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Acerca de nosotros</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos una empresa familiar con más de 15 años de experiencia transportando visitantes y locales por toda la maravillosa isla de San Andrés. Nuestras chivas son un símbolo de la tradición colombiana adaptada al espíritu caribeño de la isla.</p>
+                    <p>Nos especializamos en crear experiencias auténticas que combinan el transporte cómodo y seguro con el conocimiento local, la música tradicional y el ambiente festivo característico de nuestras chivas.</p>
+                    <p>Todos nuestros conductores y guías son isleños con profundo conocimiento de la historia, cultura y los mejores lugares para visitar, garantizando que tu experiencia sea inolvidable y enriquecedora.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/6.jpeg" alt="Chiva tradicional">
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-text">Años de experiencia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-text">Chivas disponibles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="20000">0</div>
+                    <div class="stat-text">Clientes felices</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-text">Rutas por la isla</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rutas Destacadas -->
+    <!-- <section class="routes" id="routes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Rutas Destacadas</h2>
+            </div>
+            <div class="routes-container">
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="img/vuelta_isla.jpeg" alt="Vuelta a la Isla">
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title">Vuelta a la Isla</h3>
+                        <div class="route-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i> 5 horas
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 7 paradas
+                            </div>
+                        </div>
+                        <p class="route-description">Recorre los principales atractivos de San Andrés en un solo día, visitando playas, miradores y atracciones culturales.</p>
+                        <div class="route-price">$85.000 COP / persona</div>
+                        <a href="#booking" class="route-button">Reservar ahora</a>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="img/otroatardecer.jpg" alt="Atardecer en La Loma">
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title">Atardecer en La Loma</h3>
+                        <div class="route-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i> 3 horas
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 4 paradas
+                            </div>
+                        </div>
+                        <p class="route-description">Disfruta del mejor atardecer de la isla desde La Loma con música en vivo, cócteles típicos y vistas panorámicas.</p>
+                        <div class="route-price">$65.000 COP / persona</div>
+                        <a href="#booking" class="route-button">Reservar ahora</a>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="img/Tour.jpg" alt="Tour de Playas">
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title">Tour de Playas</h3>
+                        <div class="route-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i> 6 horas
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i> 5 playas
+                            </div>
+                        </div>
+                        <p class="route-description">Visita las mejores playas de la isla con tiempo para nadar, tomar el sol y disfrutar de actividades acuáticas opcionales.</p>
+                        <div class="route-price">$75.000 COP / persona</div>
+                        <a href="#booking" class="route-button">Reservar ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Opciones de Transporte -->
+    <section class="transport" id="transport">
+        <div class="container">
+            <div class="section-title">
+                <h2>Opciones de Transportes</h2>
+            </div>
+            <div class="transport-options">
+                <div class="transport-item">
+                    <div class="transport-image">
+                        <div class="transport-rotate">
+                            <img src="img/1.jpeg" alt="Chiva Estándar">
+                        </div>
+                    </div>
+                    <h3 class="transport-title">Chiva Estándar</h3>
+                    <div class="transport-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i> Capacidad: 20 personas
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i> Sistema de sonido
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-umbrella-beach"></i> Techo abierto
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map"></i> Guía turístico
+                        </div>
+                    </div>
+                    <a href="pages/servicios.html?id=1" class="transport-cta">Más información</a>
+                </div>
+                <div class="transport-item">
+                    <div class="transport-image">
+                        <div class="transport-rotate">
+                            <img src="img/3.jpeg" alt="Chiva VIP">
+                        </div>
+                    </div>
+                    <h3 class="transport-title">Chiva VIP</h3>
+                    <div class="transport-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i> Capacidad: 15 personas
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i> Sistema DJ en vivo
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cocktail"></i> Bar abierto
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map"></i> Guía bilingüe
+                        </div>
+                    </div>
+                    <a href="pages/servicios.html?id=2" class="transport-cta">Más información</a>
+                </div>
+                <div class="transport-item">
+                    <div class="transport-image">
+                        <div class="transport-rotate">
+                            <img src="img/4.jpeg" alt="Chiva Privada">
+                        </div>
+                    </div>
+                    <h3 class="transport-title">Chiva Privada</h3>
+                    <div class="transport-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i> Grupos pequeños
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-route"></i> Ruta personalizada
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i> Horario flexible
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-camera"></i> Servicio fotográfico
+                        </div>
+                    </div>
+                    <a href="pages/servicios.html?id=3" class="transport-cta">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galería</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="" alt="">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Nuestras chivas en Playa Spratt Bight</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="" alt="">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Ambiente festivo en nuestras chivas</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/atardecer.webp" alt="Atardecer desde la chiva">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Atardecer en el tour nocturno</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="" alt="">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Interior de nuestra Chiva VIP</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/hoyoSAI.jpg" alt="Hoyo Soplador">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Visita al Hoyo Soplador</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/9.jpeg" alt="Grupo en la chiva">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Nuestra Chiva en San Andres</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonials">
+        <div class="container testimonial-container">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"La mejor experiencia en San Andrés! La chiva fue super divertida, el guía muy conocedor y la música inmejorable. Vimos toda la isla en un solo día con paradas perfectas para fotos y actividades."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="img/carlos.png" alt="Cliente">
+                            </div>
+                            <h4 class="author-name">Carlos Rodríguez</h4>
+                            <p class="author-info">Medellín, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Reservamos la chiva privada para nuestra familia y fue una decisión excelente. Pudimos personalizar la ruta, el tiempo en cada parada y disfrutar de la isla a nuestro ritmo. El servicio fue excepcional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="img/daniel.png" alt="Cliente">
+                            </div>
+                            <h4 class="author-name">Daniel Martínez</h4>
+                            <p class="author-info">Ciudad de México</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"El tour del atardecer en La Loma superó todas nuestras expectativas. Las vistas eran impresionantes, la música en vivo creó un ambiente mágico y el guía compartió historias fascinantes sobre la isla y sus tradiciones."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="img/laura.png" alt="Cliente">
+                            </div>
+                            <h4 class="author-name">Laura Gómez</h4>
+                            <p class="author-info">Bogotá, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <div class="testimonial-nav-item active"></div>
+                <div class="testimonial-nav-item"></div>
+                <div class="testimonial-nav-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservas -->
+    <!-- <section class="booking" id="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Reserva tu Chiva</h2>
+            </div>
+            <div class="booking-container">
+                <div class="booking-image">
+                    <img src="/api/placeholder/500/400" alt="Reserva tu chiva">
+                </div>
+                <div class="booking-form">
+                    <h3>¡Vive la experiencia!</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="route">Ruta seleccionada</label>
+                            <select id="route" class="form-control" required>
+                                <option value="">Selecciona una ruta</option>
+                                <option value="isla">Vuelta a la Isla</option>
+                                <option value="atardecer">Atardecer en La Loma</option>
+                                <option value="playas">Tour de Playas</option>
+                                <option value="custom">Ruta personalizada</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Fecha</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="people">Número de personas</label>
+                                <input type="number" id="people" class="form-control" min="1" max="20" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Comentarios adicionales</label>
+                            <textarea id="message" class="form-control" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Chivas San Andrés Logo">
+                    <div class="footer-logo-text">Chivas San Andrés</div>
+                </div>
+                <p class="footer-desc">Ofrecemos la mejor experiencia de transporte tradicional en chivas por toda la isla de San Andrés, con rutas diseñadas para disfrutar al máximo de los paisajes, cultura y gastronomía local.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de nosotros</a></li>
+                    <li><a href="#routes">Rutas Destacadas</a></li>
+                    <li><a href="#transport">Opciones de Transportes</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#booking">Reservar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Información útil</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cancelación</a></li>
+                    <li><a href="#">Blog de viajes</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="footer-title">Contáctanos</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Av. Colombia, San Andrés Isla, Colombia</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+57 302 369 0937</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ttsuarezosorio@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Lunes - Domingo: 8:00 AM - 8:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chivas San Andrés. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

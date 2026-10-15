@@ -1,0 +1,373 @@
+{
+    "servicios": [
+        {
+            "id_servicio": 1,
+            "nombre_servicio": "Chiva Estandar",
+            "imagen_principal": "/api/placeholder/800/500",
+            "url_video": "",
+            "info_adicional": {
+                "seccion_1": {
+                    "nombre": "Descripción",
+                    "contenido": "La Chiva Estándar es perfecta para quienes desean conocer San Andrés de una forma divertida y accesible. Acompañado por música en vivo, animación y un ambiente festivo, disfrutarás de los paisajes, cultura y alegría del caribe isleño."
+                },
+                "seccion_2": {
+                    "nombre": "Horarios",
+                    "contenido": "Salidas diarias a las 10:30 AM y 3:00 PM, con una duración promedio de 3 horas. Incluye paradas en puntos turísticos como el Hoyo Soplador, West View y el centro histórico. Las salidas están sujetas a condiciones climáticas y aforo mínimo."
+                },
+                "seccion_3": {
+                    "nombre": "Condiciones Comerciales",
+                    "contenido": "Costo por persona: $90.000 COP. Incluye transporte, animación, refrigerio básico y guía turístico local. Niños menores de 5 años no pagan. Grupos de más de 10 personas reciben un descuento especial del 10% sobre el total."
+                },
+                "seccion_4": {
+                    "nombre": "Requisitos",
+                    "contenido": "Reservación recomendada con 24 horas de anticipación. Se requiere presentar el comprobante de reserva al abordar. Llevar sombrero o gorra, agua personal y estar 10 minutos antes en el punto de encuentro indicado."
+                },
+                "seccion_5": {
+                    "nombre": "Paradas",
+                    "contenido": "Se recomienda usar ropa cómoda y protector solar. No se permite el consumo de bebidas alcohólicas a bordo. En caso de mal tiempo, se reprogramará la salida o se ofrecerá un reembolso completo."
+                }
+            },
+            "paradas": [
+                {
+                "title": "Hoyo Soplador",
+                "description": "Fenómeno natural único donde el mar se filtra por cavidades subterráneas creando géiseres de agua marina. Un espectáculo impresionante de la naturaleza.",
+                "duration": "0 minutos",
+                "location": "Costa Sur",
+                "images": [
+                    "https://via.https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrmR2yRve69Ycj8n-wV8rKetVenxzB0b-ZD9UJEWW_Hu-srEQhZVW0FG-1OciUlWjNJGMTVFx4EJiysoVLEIdU6ikirsVSV-z3EtN6CHaQYrNE7iV7j5tuorY7jwrez6jlelRTZFw=s680-w680-h510-rw.com/800x400/e74c3c/ffffff?text=Hoyo+Soplador",
+                    "https://via.placeholder.com/800x400/c0392b/ffffff?text=Geiser+Natural",
+                    "https://via.placeholder.com/800x400/e74c3c/ffffff?text=Fenomeno+Natural"
+                ]
+            },
+                {
+                    "title": "West View",
+                    "description": "Mirador natural con vista panorámica y acceso a una piscina natural.",
+                    "duracion": "20 minutos",
+                    "location": "Oeste de la Isla",
+                    "images": [
+                    "https://via.https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrmR2yRve69Ycj8n-wV8rKetVenxzB0b-ZD9UJEWW_Hu-srEQhZVW0FG-1OciUlWjNJGMTVFx4EJiysoVLEIdU6ikirsVSV-z3EtN6CHaQYrNE7iV7j5tuorY7jwrez6jlelRTZFw=s680-w680-h510-rw.com/800x400/e74c3c/ffffff?text=Hoyo+Soplador",
+                    "https://via.placeholder.com/800x400/c0392b/ffffff?text=Geiser+Natural",
+                    "https://via.placeholder.com/800x400/e74c3c/ffffff?text=Fenomeno+Natural"
+                ]
+            }
+            ],
+            "operador": {
+                "nombre": "Aventuras Acuáticas San Andrés",
+                "contacto": "+57 300 123 4567"
+            },
+            "info_mapa": "13.376933, -81.364590",
+            "galeria": [
+                {
+                    "id_imagen": 1,
+                    "nombre_imagen": "Chiva 1",
+                    "titulo": "Vista aérea",
+                    "descripcion": "Disfruta de vistas panorámicas de la isla",
+                    "url_destino": "",
+                    "ruta_imagen": "/img/chiva.jpg"
+                },
+                {
+                    "id_imagen": 2,
+                    "nombre_imagen": "Chiva 2",
+                    "titulo": "Preparación",
+                    "descripcion": "Nuestro equipo preparándote para la aventura",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 3,
+                    "nombre_imagen": "Chiva 3",
+                    "titulo": "Sobre el mar",
+                    "descripcion": "Sensación de libertad sobre el mar Caribe",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 4,
+                    "nombre_imagen": "Chiva 4",
+                    "titulo": "Atardecer",
+                    "descripcion": "Experiencia única al atardecer",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 5,
+                    "nombre_imagen": "Chiva 5",
+                    "titulo": "Diversión en pareja",
+                    "descripcion": "Comparte la experiencia en pareja",
+                    "url_destino": "",
+                    "ruta_imagen": "/img/chiva.jpg"
+                },
+                {
+                    "id_imagen": 6,
+                    "nombre_imagen": "Chiva 6",
+                    "titulo": "Equipo profesional",
+                    "descripcion": "Contamos con equipo de última generación",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 7,
+                    "nombre_imagen": "Chiva 8",
+                    "titulo": "Despegue",
+                    "descripcion": "Momento del despegue desde la embarcación",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 8,
+                    "nombre_imagen": "Chiva 8",
+                    "titulo": "Mar de siete colores",
+                    "descripcion": "Vista del famoso mar de siete colores",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                }
+            ]
+        },
+        {
+            "id_servicio": 2,
+            "nombre_servicio": "Chiva VIP",
+            "imagen_principal": "/api/placeholder/800/500",
+            "url_video": "",
+            "info_adicional": {
+                "seccion_1": {
+                    "nombre": "Descripción",
+                    "contenido": "La Chiva VIP ofrece un recorrido de lujo por San Andrés, combinando comodidad, atención personalizada y entretenimiento de alto nivel. Ideal para quienes desean vivir una experiencia turística premium con bebidas exclusivas, animación y guía bilingüe."
+                },
+                "seccion_2": {
+                    "nombre": "Horarios",
+                    "contenido": "Salidas disponibles de lunes a sábado a las 10:00 AM y 4:00 PM. Duración aproximada de 5 horas con paradas en lugares emblemáticos como La Loma, Cueva de Morgan, y miradores naturales. Incluye tiempo libre para fotografías y descanso."
+                },
+                "seccion_3": {
+                    "nombre": "Condiciones Comerciales",
+                    "contenido": "Costo por persona: $250.000 COP. Incluye transporte en chiva VIP (asientos cómodos y aire acondicionado), barra libre de bebidas nacionales, refrigerios, animador profesional y guía bilingüe. Requiere reserva previa y pago anticipado."
+                },
+                "seccion_4": {
+                    "nombre": "Requisitos",
+                    "contenido": "Edad mínima: 12 años. Para consumir bebidas alcohólicas, se debe presentar identificación válida. Cupo máximo por salida: 30 personas. Se recomienda ropa cómoda, sombrero y protector solar. Llegar 15 minutos antes de la hora de salida."
+                },
+                "seccion_5": {
+                    "nombre": "Paradas",
+                    "contenido": "Incluye paradas en los principales puntos turísticos de San Andrés, como el Hoyo Soplador, La Piscinita y la Primera Iglesia Bautista. Se recomienda llevar cámara para capturar los momentos únicos."
+                }
+            },
+            "paradas": [
+                {
+                    "title": "La loma",
+                    "description": "Fenómeno natural donde el agua del mar sale disparada por un agujero en la roca.",
+                    "duration": "30 minutos",
+                    "location": "Costa Sur",
+                    "images": [
+                        "https://via.placeholder.com/800x400/9b59b6/ffffff?text=La+Loma",
+                        "https://via.placeholder.com/800x400/8e44ad/ffffff?text=Vista+360",
+                        "https://via.placeholder.com/800x400/9b59b6/ffffff?text=Punto+Alto"
+                    ]
+                },
+                {
+                    "title": "Piscinita",
+                    "description": "Piscina natural formada por arrecifes de coral. Aguas cristalinas perfectas para relajarse y disfrutar de un baño refrescante en el mar Caribe.",
+                    "duration": "40 minutos",
+                    "location": "Arrecife de Coral",
+                    "images": [
+                        "https://via.placeholder.com/800x400/9b59b6/ffffff?text=La+Loma",
+                        "https://via.placeholder.com/800x400/8e44ad/ffffff?text=Vista+360",
+                        "https://via.placeholder.com/800x400/9b59b6/ffffff?text=Punto+Alto"
+                    ]
+                }
+            ],
+            "operador": {
+                "nombre": "Chivas San Andrés",
+                "contacto": "+57 311 987 6543"
+            },
+            "info_mapa": "12.584789, -81.697968",
+            "galeria": [
+                {
+                    "id_imagen": 1,
+                    "nombre_imagen": "Chiva Vip 1",
+                    "titulo": "Chiva tradicional",
+                    "descripcion": "Nuestras coloridas chivas tradicionales",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 2,
+                    "nombre_imagen": "Chiva Vip 2",
+                    "titulo": "Tour grupal",
+                    "descripcion": "Diversión garantizada para grupos",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 3,
+                    "nombre_imagen": "Chiva Vip 3",
+                    "titulo": "Música en vivo",
+                    "descripcion": "Disfruta de música típica durante el recorrido",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 4,
+                    "nombre_imagen": "Chiva Vip 4",
+                    "titulo": "Hoyo Soplador",
+                    "descripcion": "Visita al famoso Hoyo Soplador",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 5,
+                    "nombre_imagen": "Chiva Vip 5",
+                    "titulo": "Atardecer",
+                    "descripcion": "Contempla el atardecer en nuestro tour nocturno",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 6,
+                    "nombre_imagen": "Chiva Vip 6",
+                    "titulo": "Primera Iglesia Bautista",
+                    "descripcion": "Visita a la histórica Primera Iglesia Bautista",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 7,
+                    "nombre_imagen": "Chiva Vip 7",
+                    "titulo": "La Piscinita",
+                    "descripcion": "Parada en La Piscinita natural",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 8,
+                    "nombre_imagen": "Chiva Vip 8",
+                    "titulo": "Guías locales",
+                    "descripcion": "Nuestros expertos guías locales",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                }
+            ]
+        },
+        {
+            "id_servicio": 3,
+            "nombre_servicio": "Chiva Privada",
+            "imagen_principal": "/api/placeholder/800/500",
+            "url_video": "",
+            "info_adicional": {
+                "seccion_1": {
+                    "nombre": "Descripción",
+                    "contenido": "Disfruta de una experiencia exclusiva con nuestra Chiva Privada, ideal para grupos familiares, eventos corporativos o celebraciones especiales. Recorre los principales sitios turísticos de la isla de San Andrés con música, animación personalizada y un servicio completamente adaptado a tus necesidades."
+                },
+                "seccion_2": {
+                    "nombre": "Horarios",
+                    "contenido": "La Chiva Privada está disponible todos los días bajo reserva previa. Puedes elegir entre salidas en la mañana (9:00 AM), tarde (2:00 PM) o noche (7:00 PM). Cada recorrido tiene una duración aproximada de 4 horas e incluye paradas en los puntos turísticos más emblemáticos."
+                },
+                "seccion_3": {
+                    "nombre": "Condiciones Comerciales",
+                    "contenido": "Precio por grupo desde $1.200.000 COP, incluye transporte en chiva privada, animador, equipo de sonido, hidratación y guía local. Opcional: refrigerios, bebidas alcohólicas y paradas adicionales personalizadas con costo adicional. Se requiere reserva con al menos 48 horas de anticipación."
+                },
+                "seccion_4": {
+                    "nombre": "Requisitos",
+                    "contenido": "Grupo mínimo recomendado: 10 personas. Edad mínima para consumo de bebidas alcohólicas: 18 años. No se permite el ingreso de bebidas externas. Los recorridos nocturnos deben finalizar antes de las 11:00 PM por normativas locales."
+                },
+                "seccion_5": {
+                    "nombre": "Paradas",
+                    "contenido": "Incluye paradas en los principales puntos turísticos de San Andrés, como el Hoyo Soplador, La Piscinita y la Primera Iglesia Bautista. Se recomienda llevar cámara para capturar los momentos únicos."
+                }
+            },
+            "paradas": [
+                {
+                "title": "Centro Histórico",
+                "description": "Terminamos nuestro recorrido en el corazón de San Andrés, donde podrás explorar tiendas locales, probar la gastronomía típica y llevarte recuerdos únicos.",
+                "duration": "30 minutos",
+                "location": "Centro de San Andrés",
+                "images": [
+                    "https://via.https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrmR2yRve69Ycj8n-wV8rKetVenxzB0b-ZD9UJEWW_Hu-srEQhZVW0FG-1OciUlWjNJGMTVFx4EJiysoVLEIdU6ikirsVSV-z3EtN6CHaQYrNE7iV7j5tuorY7jwrez6jlelRTZFw=s680-w680-h510-rw.com/800x400/e74c3c/ffffff?text=Hoyo+Soplador",
+                    "https://via.placeholder.com/800x400/c0392b/ffffff?text=Geiser+Natural",
+                    "https://via.placeholder.com/800x400/e74c3c/ffffff?text=Fenomeno+Natural"
+                ]
+            },
+                {
+                    "title": "Punto de Encuentro",
+                    "description": "Nos reunimos en el centro de la isla para comenzar nuestra aventura. Aquí recibirás las indicaciones iniciales y conocerás a tu guía turístico.",
+                    "duracion": "10 minutos",
+                    "location": "Centro de San Andrés",
+                    "images": [
+                    "https://via.https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrmR2yRve69Ycj8n-wV8rKetVenxzB0b-ZD9UJEWW_Hu-srEQhZVW0FG-1OciUlWjNJGMTVFx4EJiysoVLEIdU6ikirsVSV-z3EtN6CHaQYrNE7iV7j5tuorY7jwrez6jlelRTZFw=s680-w680-h510-rw.com/800x400/e74c3c/ffffff?text=Hoyo+Soplador",
+                    "https://via.placeholder.com/800x400/c0392b/ffffff?text=Geiser+Natural",
+                    "https://via.placeholder.com/800x400/e74c3c/ffffff?text=Fenomeno+Natural"
+                ]
+            }
+            ],
+            "operador": {
+                "nombre": "Caribe Dive Center",
+                "contacto": "+57 315 789 4561"
+            },
+            "info_mapa": "12.548964, -81.728593",
+            "galeria": [
+                {
+                    "id_imagen": 1,
+                    "nombre_imagen": "Privada 1",
+                    "titulo": "Arrecife de coral",
+                    "descripcion": "Espectaculares formaciones de coral",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 2,
+                    "nombre_imagen": "Privada 2",
+                    "titulo": "Instructor profesional",
+                    "descripcion": "Nuestros instructores certificados PADI",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 3,
+                    "nombre_imagen": "Privada 3",
+                    "titulo": "Equipo completo",
+                    "descripcion": "Disponemos de equipos de última generación",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 4,
+                    "nombre_imagen": "Privada 4",
+                    "titulo": "Embarcación",
+                    "descripcion": "Nuestro bote especializado para buceo",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 5,
+                    "nombre_imagen": "Privada 5",
+                    "titulo": "Vida marina",
+                    "descripcion": "Increíble biodiversidad en nuestros arrecifes",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 6,
+                    "nombre_imagen": "Privada 6",
+                    "titulo": "Snorkel",
+                    "descripcion": "Experiencia de snorkel para todos",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 7,
+                    "nombre_imagen": "Privada 7",
+                    "titulo": "Blue Wall",
+                    "descripcion": "El impresionante muro azul",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                },
+                {
+                    "id_imagen": 8,
+                    "nombre_imagen": "Privada 8",
+                    "titulo": "El Planchón",
+                    "descripcion": "Buceo en el barco hundido",
+                    "url_destino": "",
+                    "ruta_imagen": "/api/placeholder/800/500"
+                }
+            ]
+        }
+    ]
+}
